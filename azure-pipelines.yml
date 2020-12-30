@@ -7,9 +7,9 @@ steps:
     gradleWrapperFile: 'gradlew'
     tasks: 'build'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    codeCoverageToolOption: 'JaCoCo'
-    codeCoverageClassFilesDirectories: 'buildSrc/build/classes/java/main'
+    testResultsFiles: '**/*.html'
+    codeCoverageToolOption: 'Cobertura'
+    codeCoverageClassFilesDirectories: 'app/build/classes/java/main,list/build/classes/java/main,utilities/build/classes/java/main'
     codeCoverageFailIfEmpty: true
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
